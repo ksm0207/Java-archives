@@ -1,4 +1,4 @@
-package part03;
+package backjoon02;
 
 import java.util.Scanner;
 
