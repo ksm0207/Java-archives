@@ -18,14 +18,18 @@ public class AlermExample {
         System.out.println("M 입력");
         mValue = scan.nextInt();
 
-        if (mValue < 45) {
+        if (mValue < alerm) {
             hValue --;
-            mValue = 60 - (45 - mValue);
-            System.out.println("" + hValue + "" + mValue);
+            mValue = 60 - (alerm - mValue);
+            System.out.println("" + hValue + " " + mValue);
             if (hValue < 0) {
                 hValue = 23;
                 System.out.println("!!" + hValue + "!!" + mValue);
+            }else{
+                System.out.println("Result  " + hValue + " " + mValue);
             }
+        }else{
+            System.out.println(" " + hValue + " " + mValue);
         }
     }
 }
