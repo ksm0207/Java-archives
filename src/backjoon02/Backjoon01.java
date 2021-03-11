@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class Backjoon01 {
     public static void main(String [] args){
 
+        // for - 구구단문제
+
         int value =0;
         Scanner scan = new Scanner(System.in);
         value = scan.nextInt();
