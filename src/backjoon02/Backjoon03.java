@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Backjoon03 {
     public static void main(String [] args){
+        
+        // for - 합 구하기
 
         int num = 0;
         int sum = 0;
