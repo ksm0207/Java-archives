@@ -1,30 +1,27 @@
 package backjoon02;
 
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class Backjoon07 {
-    public static void main ( String [] args) throws Exception{
+    public static void main ( String [] args){
 
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        Scanner scan = new Scanner(System.in);
 
-        int value = Integer.parseInt(br.readLine());
+        int value = scan.nextInt();
+        String res = "";
         int count = 0;
 
-
         for (int i = 0 ; i < value ; i ++) {
-            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-            count ++;
-            bw.write("Case #" +count+": ");
-            bw.write(Integer.parseInt(st.nextToken()) + Integer.parseInt(st.nextToken()) + "\n");
+            int frist  = scan.nextInt();
+            int second  = scan.nextInt();
+
+            res = res + "Case #"+ (i+ 1) +": " +( frist+ second )+"\n";
+//            if( !(i < value - 1)) {
+//                res = res +  "\n";
+//            }
         }
-        br.close();
-        bw.flush();
-        bw.close();
+        System.out.println(res);
     }
 }
+
