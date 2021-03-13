@@ -10,19 +10,12 @@ public class Backjoon06 {
 
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        int i = 0;
-        int sum = 0;
 
-        while (i < num ){
-            i ++;
-            sum = i;
-
-
-            if (sum == num) {
-               sum = sum - i;
-            }
-            System.out.println(sum);
+        for (int i = num ; i > 0 ; i --) {
+            System.out.println(i);
         }
 
+
     }
+
 }
