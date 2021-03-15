@@ -17,3 +17,7 @@ public class Backjoon01 {
         System.out.println(array[0] + " " + array[size -1]);
     }
 }
+
+// 메모리 327984 KB
+// 시간   2356ms
+

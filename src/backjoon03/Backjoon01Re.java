@@ -16,9 +16,13 @@ public class Backjoon01Re {
 
         for (int i = 0 ; i < array.length ; i ++ ) {
             array[i] = Integer.parseInt(st.nextToken());
+            System.out.println("StringTokenizer 발생" + array[i]);
         }
         Arrays.sort(array);
         System.out.println(array[0] + " " + array[count - 1]);
         br.close();
     }
 }
+
+// 메모리 327984 KB --> 105560 KB
+// 시간   2356ms    --> 1520ms
