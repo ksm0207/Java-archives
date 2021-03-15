@@ -8,12 +8,12 @@ public class Backjoon10 {
         int count;
         count = scan.nextInt();
 
-        for (int i = 1; i <= count; ++i) {
-            for (int j = 1; j <= count - i; ++j) {
+        for (int i = 1; i <= count; i++) {
+            for (int j = 1; j <= count - i; j++) {
                 System.out.print(" ");
             }
 
-            for (int j = 1; j <= i; ++j) {
+            for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
             System.out.println();
