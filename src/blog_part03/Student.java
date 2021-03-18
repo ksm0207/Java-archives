@@ -6,14 +6,12 @@ public class Student {
     public static void main(String [] args){
 
         Scanner scan = new Scanner(System.in);
-
-
         // 3행 4열 배열 선언
         String [] [] arr = new String[3][4];
         // 메뉴 배열
         String [] menu = new String [] {"0 : 종료하기","1 : 성적입력","2 : 전체 출력"};
-        int check =0 , value;
 
+        int check =0 , value;
         System.out.println("성적입력 프로그램 시작하기");
 
         do {
@@ -51,7 +49,6 @@ public class Student {
                         }
                         break;
                     }
-
                 default:
                         break;
             }
