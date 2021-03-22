@@ -1,25 +1,22 @@
 package backjoon03;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class Backjoon01Final {
-    public static void main(String [] args) {
+    public static void main(String [] args) throws Exception {
 
-        Scanner scan = new Scanner(System.in);
-        int forCount = scan.nextInt();
-        int value;
-        int min = 0 ;
-        int max = 0 ;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int arrCount = Integer.parseInt(br.readLine());
+        int[] arr = new int [arrCount];
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
-        for (int i = 0 ; i < forCount ; i ++) {
-            value = scan.nextInt();
-
-            if (max <= value) {
-                max = value;
-            }else{
-                min = value;
-            }
+        for (int i = 0 ; i < arr.length; i ++) {
+            arr[i] = Integer.parseInt(st.nextToken());
         }
-        System.out.println(min + " "+max);
+        Arrays.sort(arr);
+        System.out.println(arr[0] +" "+arr[arrCount - 1]);
     }
 }
