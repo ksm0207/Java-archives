@@ -19,11 +19,16 @@ public class Backjoon02Final {
 
             System.out.println("카운트 발생 : "+countIndex);
 
+
             if (value > max) {
                 max = value;
                 index = countIndex;
+                System.out.println("Index  : "+index);
+
             }else{
                 System.out.println("Max 보다 작은 값 : " + value);
+                System.out.println("ELSE Index  : "+index);
+
             }
         }
         System.out.println("최대 값 :" + max + "최대 값 위치 : " +  index);
