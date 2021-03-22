@@ -9,6 +9,7 @@ public class Calculator {
         String [] menu = new String[] {"0 : 종료" , "1 : 덧셈" , "2 : 뺄셈" , "3 : 곱셈" , "4 : 나눗셈"};
         int frist, second ;
         int selectNumber= 0;
+        int errorCount = 0;
         final int max = 1000000000;
 
         System.out.println("성민s 계산기");
@@ -63,7 +64,18 @@ public class Calculator {
                 }
             }
         }catch (Exception e){
-            System.out.println("Error : " + " 특수문자 혹은 기호가 감지되었습니다 숫자만을 허용합니다 " + e);
+            errorCount ++;
+            System.out.println("에러가 발생했습니다 " + "특수문자 혹은 기호가 감지되었습니다 숫자만 입력하세요. " + e);
+            System.out.println("에러 시도 : "  + errorCount + " 회\n" + "5회 이상시 프로그램이 종료됩니다");
+
+            if (errorCount == 5){
+                System.out.println("                    ______");
+                System.out.println("프로그램 종료     r-[._.]-r");
+                System.out.println("             =))=)) ------");
+                System.out.println("                  -ㄴ---ㄴ");
+                System.out.println("잠시후에 다시 시도 해주세요.");
+                break;
+            }
             }
         }
     }
