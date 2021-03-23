@@ -9,10 +9,10 @@ public class Backjoon04 {
     public static void main(String [] args) throws IOException {
 
         // 배열 X
+        int value;
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         HashSet<Integer> hs = new HashSet<Integer>();
-        int value;
 
         for (int i = 0 ; i < 10 ; i ++) {
             value = Integer.parseInt(br.readLine()) % 42;
