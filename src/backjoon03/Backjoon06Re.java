@@ -21,7 +21,8 @@ public class Backjoon06Re {
             result = 0;
 
             for (int j = 0; j < arr[i].length(); j ++) { // arr[i].length()는 배열의 데이터 길이를 반환
-                System.out.println(arr[i].length());
+//                System.out.println(arr[i].length());
+
                 // 배열에 담긴 데이터중에 O 가 있는지 체크
                 if (arr[i].charAt(j) == 'O') {
                     // 존재하는 만큼 countScore를 증감
