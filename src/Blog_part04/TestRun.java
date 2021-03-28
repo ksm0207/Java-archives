@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class B extends A{
+public class TestRun extends Test {
     public static void main(String [] args) throws IOException {
 
-        A a = new A();
+        Test a = new Test();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Class 테스트 1 ~ 3 숫자 입력");
         int value = Integer.parseInt(br.readLine());

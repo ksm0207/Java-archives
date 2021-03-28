@@ -2,7 +2,7 @@ package Blog_part04;
 
 import java.io.Serializable;
 
-public class A {
+public class Test {
 
     public Serializable Number(int num , int num2){
 
