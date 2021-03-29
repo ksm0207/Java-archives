@@ -1,6 +1,6 @@
 package classExample;
 
-public class cbvTest {
+public class CallByValueTest01 {
 
    static void swap(int a, int b){
         int temp = a;
