@@ -8,6 +8,7 @@ public class Add {
 
         return x + y;
     }
+
     public static void main(String [] args){
         
         Add a = new Add();
