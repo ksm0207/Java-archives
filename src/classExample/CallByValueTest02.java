@@ -5,6 +5,11 @@ class CallByValueTest02 {
         Integer temp = a;
         a = b;
         b = temp;
+
+        System.out.println("reference A = "+ a); // 2
+        System.out.println("reference B = "+ b); // 1
+
+        System.out.println(a.getClass());
     }
 
     public static void main(String args[]) {
@@ -14,11 +19,11 @@ class CallByValueTest02 {
         System.out.println("a => " + a.intValue());
         System.out.println("b => " + b.intValue());
 
-        swap(a, b);
+        swap(a,b);
 
-        System.out.println("------- swap 후 -------");
+        System.out.println("a => " + a.intValue()); // 1
+        System.out.println("b => " + b.intValue()); // 2
+        System.out.println(a.getClass());
 
-        System.out.println("a => " + a.intValue());
-        System.out.println("b => " + b.intValue());
     }
 }

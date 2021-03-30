@@ -22,8 +22,6 @@ class CallByValueTest03 {
 
         swap(a, b);
 
-        System.out.println("------- swap 후 -------");
-
         System.out.println("a => " + a.value);
         System.out.println("b => " + b.value);
     }
