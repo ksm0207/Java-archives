@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class ChangeMoney {
     public static void main(String[] args) {
+        // Scanner
+        // 메모리   : 18088 KB
+        // 시간     : 224ms
+        // 코드길이 : 606B
+
         Scanner scan = new Scanner(System.in);
         int change;
         int coin = 0;
@@ -13,7 +18,9 @@ public class ChangeMoney {
 
             if (change % 5 == 0) {
                 change = change / 5;
+                System.out.println("Change 값 : " + change);
                 coin = change + coin;
+                System.out.println("Coin 값 : " + coin);
                 break;
             }else{
                 change -=2;
