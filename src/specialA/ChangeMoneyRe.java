@@ -9,7 +9,7 @@ public class ChangeMoneyRe {
         // BufferedReader
         // 메모리   : 14604 KB
         // 시간     : 140ms
-        // 코드길이 : 794B 
+        // 코드길이 : 794B
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int resCoin = 0;
