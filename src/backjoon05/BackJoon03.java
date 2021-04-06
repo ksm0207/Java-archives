@@ -16,6 +16,7 @@ public class BackJoon03 {
 
         for (int i = 0 ; i < S.length() ; i ++) {
             char resValue = S.charAt(i);
+            System.out.println(resValue);
 
             if ( arr[resValue - 'a'] == -1 ) {
                 arr[resValue - 'a'] = i;
