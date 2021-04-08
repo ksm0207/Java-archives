@@ -18,7 +18,7 @@ public class BreakEvenPoint {
         if (price <= variableCost) {
             // 170 <= 70
             // 1 <= 2
-            System.out.println("-1");
+            System.out.println(-1);
         }else{
             System.out.println( (fixedMoney / (price - variableCost))+1 );
         }
