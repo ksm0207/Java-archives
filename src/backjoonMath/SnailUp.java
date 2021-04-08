@@ -8,7 +8,7 @@ public class SnailUp {
     public static void main(String[] args) throws Exception {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+        StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
         int snailUp = Integer.parseInt(st.nextToken());
         int snailDown = Integer.parseInt(st.nextToken());
@@ -25,13 +25,12 @@ public class SnailUp {
 
 
         // 1. dayRes 변수가 가지는 식을 가지고 몫이     1일 경우 dayRes 증감 조건식 / [실패]
-        // 1. dayRes 변수가 가지는 식을 가지고 나머지는 1일 경우 dayRes 증감 조건식 % [실패]
+        // 2. dayRes 변수가 가지는 식을 가지고 나머지는 1일 경우 dayRes 증감 조건식 % [실패]
+        // 3. dayRes 변수가 가지는 식을 가지고 0 과 일치하지 않는다면 dayRes 증감 [성공]
 
-        if ( (V - snailDown) % (snailUp - snailDown) == 1  ) {
-            dayRes ++;
-            System.out.println(dayRes);
-        }else{
-            System.out.println(dayRes);
+        if ((V - snailDown) % (snailUp - snailDown) != 0) {
+            dayRes++;
         }
+        System.out.println(dayRes);
     }
 }
