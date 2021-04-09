@@ -24,7 +24,7 @@ public class BreakEvenPoint {
         System.out.println(C);
 
                      // 170 < 70
-        if (C < B) { // 1 < 2
+        if (C - B < 0 ) { // 1 < 2
             System.out.println("-1");
         }else{
             System.out.println(  ((A / (C-B))+1)  );
