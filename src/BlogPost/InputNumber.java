@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class InputNumber {
 
+    // 1. InputMismatchException 예외처리
+
     public void print(){
         Scanner scan = new Scanner(System.in);
         int value = 0;
