@@ -22,6 +22,5 @@ public class NumberFormatException {
         Scanner scan = new Scanner(System.in);
         String strInput = scan.next();
         nfe.parseInt(strInput);
-
     }
 }
