@@ -7,6 +7,8 @@ public class SugarRe {
     public static void main(String[] args) throws Exception {
         // 1. 최소한 적은 봉지 개수를 구하기. (3kg 5kg 설탕봉지)
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+       System.out.println(14%5);
+       System.out.println(1 /3 );
         int N = Integer.parseInt(br.readLine());
 
         if ( N == 4 || N == 7) {
