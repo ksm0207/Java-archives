@@ -21,7 +21,6 @@ public class BackJoon02 {
                 y = Integer.parseInt(st.nextToken());
                 System.out.println(x + y);
             }catch (Exception error){
-                System.out.println(error);
                 break;
             }
 
