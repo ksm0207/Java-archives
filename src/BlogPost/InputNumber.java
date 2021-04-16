@@ -16,7 +16,6 @@ public class InputNumber {
                 value = scan.nextInt();
                 System.out.println("잘하셨습니다 입력한 값은 " +value + " 입니다 ");
                 break;
-
             }catch (InputMismatchException errorRes) {
                 System.out.println("-----------------------------");
                 System.out.println("try 블럭에 예외가 발생했습니다. ");

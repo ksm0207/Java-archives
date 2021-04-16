@@ -18,7 +18,7 @@ public class BackJoon03 {
 //                System.out.println( ( (N%10)*10 ) + ( ((N/10) + (N%10))%10 ));
 
         while (true) {
-            N = ( (N%10)*10) + ( ( ( N/10 ) + ( N%10 ) ) %10 );
+            N = ( (N % 10)*10) + ( ( ( N/10 ) + ( N%10 ) ) %10 );
             count ++;
 
             System.out.println("Count ==== > "+count);
