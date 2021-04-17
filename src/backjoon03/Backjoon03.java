@@ -1,33 +1,32 @@
 package backjoon03;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Backjoon03 {
     public static void main (String [] args) throws Exception {
-        // 150 266 427
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int [] arr = new int [10];
 
-        int value = Integer.parseInt(br.readLine())
-                  * Integer.parseInt(br.readLine())
-                  * Integer.parseInt(br.readLine());
+        int ABC = Integer.parseInt(br.readLine()) *
+                  Integer.parseInt(br.readLine()) *
+                  Integer.parseInt(br.readLine());
 
-        String str = String.valueOf(value);
-        // 1 7 0 3 7 3 0 0
-        // 0 = 3
-        // 1 = 1
-        // 2 = 0
-        // 3 = 2
-        // 4 = 0
-        // 5 = 0
-        // 6 = 0
-        // 7 = 2
-        // 8 = 0
-        // 9 = 0 ... 3 1 0 2 0 0 0 2 0 0
+        String str = String.valueOf(ABC);
+
+        // str.length() = 170 373 00 length
         for (int i = 0 ; i < str.length(); i ++) {
-            System.out.println(str);
+            arr[str.charAt(i) - '0'] ++;
+
+//            System.out.println(arr[str.charAt(i)-'0']++);
+
+//            System.out.println(str.charAt(i));
+            System.out.println(str.charAt(i) -'0'+ "  >>>>>>>>>>>>  " + arr[str.charAt(i) -'0'] + "\n"  );
+        }
+        for (int res : arr) {
+            System.out.println(res);
+//            System.out.println("arr[0] Result  ================> "+arr[0]);
         }
     }
 }
+// 150 266 427
