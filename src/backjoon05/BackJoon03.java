@@ -11,7 +11,7 @@ public class BackJoon03 {
         for (int i = 0 ; i < arr.length ; i ++) {
             arr[i] = -1;
         }
-        // backjoon
+        // beckjoon
         String S = scan.nextLine();
 
         for (int i = 0 ; i < S.length() ; i ++) {
