@@ -37,7 +37,6 @@ public class BaekJoon03R {
             if (arr[find - 'a']  == -1) {
                 arr[find - 'a'] = i;
                 System.out.println(find +" : "+ (find - 'a') + "  >>>>>>>>>>  " +  arr[find - 'a' ]);
-            }else{
             }
         }
         // *************************************
