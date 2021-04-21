@@ -1,4 +1,4 @@
-package backjoonMath;
+package baekjoonMath;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
