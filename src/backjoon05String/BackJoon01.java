@@ -1,4 +1,4 @@
-package backjoon05;
+package backjoon05String;
 
 public class BackJoon01 {
     public static void main(String[] args) throws Exception {
