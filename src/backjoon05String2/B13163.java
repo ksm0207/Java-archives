@@ -38,7 +38,6 @@ public class B13163 {
 
                     for (int k =  j ; k < initFirst ; k ++) {
                         temp += name[i].charAt(k);
-                        System.out.println(temp);
                     }
                     name[i] = name[i].replace(temp,"god");
                     name[i] = name[i].replaceAll(" ","");
